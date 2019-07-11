@@ -6,6 +6,18 @@
 \usage{
 \method{fitted}{multippmnet}(object, s = NULL, drop = FALSE, ...)
 }
+\arguments{
+\item{object}{A fitted \code{multippmnet} object.}
+
+\item{s}{Value(s) of the penalty tuning parameter at which predictions are
+to be made. Default is the entire sequence used to fit the
+regularization path.}
+
+\item{drop}{Logical value. If \code{TRUE}, quadrature points that were not
+used to fit the model are deleted.}
+
+\item{...}{Ignored}
+}
 \description{
 Computes the fitted intensity for a regularized inhomogeneous Poisson point
 process model at the quadrature points used to fit the model.

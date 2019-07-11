@@ -5,6 +5,9 @@
 #' @param object A fitted \code{multippmnet} object.
 #' @param data A list of pixel images (of class \code{imlist}) containing the
 #'         spatial covariates used to fit the model.
+#' @param window Optional. An observation window (of class \code{owin}) defining
+#'        the region within which predictions are to be made. Default is the
+#'        window of the original data used to fit the model.
 #' @param eps Optional. The height and width of pixels in the prediction
 #'        image(s). A numeric value or numeric vector of length 2 specifying
 #'        pixel dimensions in the x and y directions. Incompatible with
@@ -75,6 +78,14 @@ predict.multippmnet <- function(object, data, window = NULL,
 #'
 #' Computes the fitted intensity for a regularized inhomogeneous Poisson point
 #' process model at the quadrature points used to fit the model.
+#'
+#' @param object A fitted \code{multippmnet} object.
+#' @param s Value(s) of the penalty tuning parameter at which predictions are
+#'        to be made. Default is the entire sequence used to fit the
+#'        regularization path.
+#' @param drop Logical value. If \code{TRUE}, quadrature points that were not
+#'        used to fit the model are deleted.
+#' @param ... Ignored
 #'
 #' @export
 fitted.multippmnet <- function(object, s = NULL, drop = FALSE, ...) {

@@ -13,6 +13,10 @@
 \item{data}{A list of pixel images (of class \code{imlist}) containing the
 spatial covariates used to fit the model.}
 
+\item{window}{Optional. An observation window (of class \code{owin}) defining
+the region within which predictions are to be made. Default is the
+window of the original data used to fit the model.}
+
 \item{eps}{Optional. The height and width of pixels in the prediction
 image(s). A numeric value or numeric vector of length 2 specifying
 pixel dimensions in the x and y directions. Incompatible with
