@@ -17,3 +17,5 @@ RoxygenNote: 6.1.1
 Imports: 
     spatstat,
     asgl
+URL: https://github.com/jeffdaniel/multippmnet
+BugReports: https://github.com/jeffdaniel/multippmnet/issues
