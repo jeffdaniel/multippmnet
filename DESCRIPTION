@@ -1,13 +1,15 @@
 Package: multippmnet
-Title: What the Package Does (One Line, Title Case)
+Title: Regularized Multivariate Spatial Point Process Models
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Jeffrey",
+           family = "Daniel",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+           email = "jdaniel@uoguelph.ca")
+Description: Fit an inhomogeneous multivariate Poisson point process model
+    via penalized conditional logistic regression. An adaptive sparse group 
+    lasso penalty is employed in order to exploit grouped structure in the model
+    coefficients.
 License: What license it uses
 Encoding: UTF-8
 LazyData: true
